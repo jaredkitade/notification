@@ -1,14 +1,18 @@
-body {
+* {
 	box-sizing:border-box;
 }
+body {
+	background-color: black;
+}
 #notification {
-	width:500px;
-	height:500px;
+	width:350px;
+	height:350px;
 	position: absolute;
 	top: 50%;
 	left:50%;
 	transform:translate(-50%,-50%);
-	background-color: blue;
+	background-color: white;
+	border-radius:50px;
 }
 #button-container { 
 	height:auto;
@@ -38,22 +42,23 @@ body {
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 3; /* Sit on top */
+    z-index: 1; /* Sit on top */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    color:red;  
+	background-color: white;    
+	color:red;  
+    border-radius: 50px;
+    padding:30px;
 }
-.close {
+.close-like, .close-dislike {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
-    z-index: 4;
+    z-index: 2;
 }
 @media only screen 
   and (min-device-width: 375px) 
@@ -62,6 +67,5 @@ body {
   	#notification {
 		width:100%;
 		height:100%;
-		background-color: red;
 	}
 }

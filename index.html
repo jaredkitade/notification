@@ -23,11 +23,11 @@
 		</div>
 
 			<div id="love" class="modal">
-				<span class="close">X</span>
+				<span class="close-like">X</span>
 				<p>We're glad to hear that!</p>
 			</div>
 			<div id="hate" class="modal">
-				<span class="close">X</span>
+				<span class="close-dislike">X</span>
 				<p>We're sorry to hear that. If you don't mind, <a href="mailto:support@retronyms.com">tell us how we can improve it</a></p>
 			</div>
 	</div>
@@ -43,10 +43,11 @@ var likebtn = document.getElementById("love-it");
 var dislikebtn = document.getElementById("hate-it");
 
 // All 
-var modal = document.getElementsByClassName("modal");
+// var modal = document.getElementsByClassName("modal");
 
 // Close
-var close = document.getElementsByClassName("close")[0];
+var closelike = document.getElementsByClassName("close-like")[0];
+var closedislike = document.getElementsByClassName("close-dislike")[0];
 
 // Click to open Like
 likebtn.onclick = function() {
@@ -59,12 +60,20 @@ dislikebtn.onclick = function() {
 }
 
 // Click to Close
-close.onclick = function() {
-	modal.style.display = "none";
+closelike.onclick = function() {
+	likemodal.style.display = "none";
+}
+closedislike.onclick = function() {
+	dislikemodal.style.display = "none";
 }
 window.onclick = function(event) {
-	if (event.target == modal) {
-		modal.style.display = "none";
+	if (event.target == likemodal) {
+		likemodal.style.display = "none";
+	}
+}
+window.onclick = function(event) {
+	if (event.target == dislikemodal) {
+		dislikemodal.style.display = "none";
 	}
 }
 </script>
