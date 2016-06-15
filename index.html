@@ -8,65 +8,63 @@
 </head>
 <body>
 
-	<div id='notification'>
+	<div id="notification">
 
-		<div id='button-container'>
+		<div id="button-container">
 
-			<div class='button' id='love-it'>
-				👏👍👌🔥Love it
-					<div class='modal' id='love'>
-						lk alkjdsf alksjdf 
-					</div>
+			<div id="love-it" class="button">
+				<p>👏👍👌🔥Love it</p>
 			</div>
 
-
-			<div class='button' id='hate-it'>
-				Hate it 😠 💀 🔪 💣 💥 🔫
-					<div class='modal' id='hate'>
-						<span class='close'>X</span>
-						<p>
-							<a href='mailto:support@retronyms.com'>Tell us</a>
-						</p>
-					</div>
+			<div id="hate-it" class="button">
+				<p>Hate it 😠 💀 🔪 💣 💥 🔫</p>
 			</div>
 
 		</div>
 
+			<div id="love" class="modal">
+				<span class="close">X</span>
+				<p>We're glad to hear that!</p>
+			</div>
+			<div id="hate" class="modal">
+				<span class="close">X</span>
+				<p>We're sorry to hear that. If you don't mind, <a href="mailto:support@retronyms.com">tell us how we can improve it</a></p>
+			</div>
 	</div>
 
 </body>
 <script>
-// Like
-var likemodal = document.getElementById('love');
-var likebtn = document.getElementById('love-it');
+// modal
+var likemodal = document.getElementById("love");
+var dislikemodal = document.getElementById("hate");
 
-// Dislike
-var dislikemodal = document.getElementById('hate');
-var dislikebtn = document.getElementById('hate-it');
+// button
+var likebtn = document.getElementById("love-it");
+var dislikebtn = document.getElementById("hate-it");
 
 // All 
-var modal = document.getElementByClassName('modal');
+var modal = document.getElementsByClassName("modal");
 
 // Close
-var span = document.getElementByClassName('close')[0];
+var close = document.getElementsByClassName("close")[0];
 
 // Click to open Like
 likebtn.onclick = function() {
-	likemodal.style.display = 'block';
+	likemodal.style.display = "block";
 }
 
 // Click to open Dislike
 dislikebtn.onclick = function() {
-	dislikemodal.style.display = 'block';
+	dislikemodal.style.display = "block";
 }
 
 // Click to Close
-span.onclick = function() {
-	modal.style.display = 'none'
+close.onclick = function() {
+	modal.style.display = "none";
 }
 window.onclick = function(event) {
 	if (event.target == modal) {
-		modal.style.display = 'none'
+		modal.style.display = "none";
 	}
 }
 </script>
