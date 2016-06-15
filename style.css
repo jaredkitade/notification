@@ -1,20 +1,44 @@
+body {
+	box-sizing:border-box;
+}
 #notification {
-			width:100vw;
-			height:100vh;
-			margin:0 auto;
-			background-color: green;
-		}
-		.button {
-			
-		}
-
+	width:500px;
+	height:500px;
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	background-color: green;
+}
+#button-container { 
+	height:auto;
+	width: 300px;
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+.button {
+	width:300px;
+	height:auto;
+	padding:5px;
+	background-color: white;
+	color:black;
+	text-align: center;
+	margin-bottom:10px;
+}
+.button a {
+	text-decoration: none;
+	color: black;
+	cursor: pointer;
+}
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
   	#notification {
-		width:100pt;
-		height:100pt;
+		width:300px;
+		height:300px;
 		margin:0 auto;
 		background-color: red;
 	}
