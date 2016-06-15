@@ -1,0 +1,21 @@
+#notification {
+			width:100vw;
+			height:100vh;
+			margin:0 auto;
+			background-color: green;
+		}
+		.button {
+			
+		}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+  	#notification {
+		width:100vw;
+		height:100vh;
+		margin:0 auto;
+		background-color: red;
+	}
+}
