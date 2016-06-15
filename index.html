@@ -7,16 +7,68 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 </head>
 <body>
-	<div id='notification'>
-		<div id='button-container'>
-			<div class='button'>
-				<a href=''>Love it</a>
-			</div>
-			<div class='button'>
-				<a href='mailto:support@retronyms.com'>Hate it 😠 💀 🔪 💣 💥 🔫</a>
-			</div>
-		</div>
-	</div>
-</body>
 
+	<div id='notification'>
+
+		<div id='button-container'>
+
+			<div class='button' id='love-it'>
+				👏👍👌🔥Love it
+			</div>
+
+					<div class='modal' id='love'>
+						lk alkjdsf alksjdf 
+					</div>
+
+			<div class='button' id='hate-it'>
+				Hate it 😠 💀 🔪 💣 💥 🔫
+			</div>
+
+					<div class='modal' id='hate'>
+						<span class='close'>X</span>
+						<p>
+							<a href='mailto:support@retronyms.com'>Tell us</a>
+						</p>
+					</div>
+
+		</div>
+
+	</div>
+
+</body>
+<script>
+// Like
+var likemodal = document.getElementById('love');
+var likebtn = document.getElementById('love-it');
+
+// Dislike
+var dislikemodal = document.getElementById('hate');
+var dislikebtn = document.getElementById('hate-it');
+
+// All 
+var modal = document.getElementByClassName('modal');
+
+// Close
+var span = document.getElementByClassName('close')[0];
+
+// Click to open Like
+likebtn.onclick = function() {
+	likemodal.style.display = 'block';
+}
+
+// Click to open Dislike
+dislikebtn.onclick = function() {
+	dislikemodal.style.display = 'block';
+}
+
+// Click to Close
+span.onclick = function() {
+	modal.style.display = 'none'
+}
+window.onclick = function(event) {
+	if (event.target == modal) {
+		modal.style.display = 'none'
+	}
+}
+</script>
 </html>
