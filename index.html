@@ -1,41 +1,44 @@
 <!doctype html>
-<html lang="en">
+<html lang='en'>
 <head>
-	<meta charset="utf-8">
+	<meta charset='utf-8'>
 	<title>Test</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<link rel='stylesheet' type='text/css' href='style.css'>
+	<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1' />
 </head>
 <body>
 
-	<div id="notification">
+	<div id='notification'>
 
-		<div id="button-container">
-				<h2>How are you liking iMPC Pro?</h2>
-			<div id="love-it" class="button">
+		<div id='button-container'>
+				<h3>What are your feelings about iMPC Pro?</h3>
+			<div id='love-it' class='button'>
 				<h1>Love it! 😀</h1>
 			</div>
 
-			<div id="hate-it" class="button">
-				<h1>Hate it... 😠</h1>
+			<div id='hate-it' class='button'>
+				<h1>Kinda pissed... 😠</h1>
 			</div>
 
 		</div>
 
-			<div id="love" class="modal">
+			<div id='love' class='modal'>
 				<div class='content'>
 					<h2>Awesome!</h2> 
-					<p>Show your support by <a href=''>rating iMPC&nbsp;Pro in&nbsp;the&nbsp;App&nbsp;Store!</a></p>
-					<p><img src='images/star.png'></p>
-					<!-- <p>⭐⭐⭐⭐⭐️️️️️</p> -->
-					<span class="close-like">Back</span>
+					<p>Show your support by rating iMPC&nbsp;Pro in&nbsp;the&nbsp;App&nbsp;Store!</p>
+<!-- 					<p><img src='images/star.png'></p>
+ -->					<!-- <p>⭐⭐⭐⭐⭐️️️️️</p> -->
+					<div class='button blue'><img src='images/stars2.png'></div>
+					<div class='button blue'><h1>Rate us!</h1></div>
+					<p class='close-like'>Back</p>
 				</div>
 			</div>
-			<div id="hate" class="modal">
+			<div id='hate' class='modal'>
 				<div class='content'>
 					<h2>We're sorry that you're having problems!</h2>
-					<p><a href="mailto:support@retronyms.com">What can we do to help?</a></p>
-					<p><span class="close-dislike">Back</span></p>
+					<p>What can we do to help?</p>
+					<p><a href='mailto:support@retronyms.com'><div class='button blue'><h1>Tell us!</h1></div></a></p>
+					<p><span class='close-dislike'>Back</span></p>
 
 				</div>
 			</div>
@@ -44,36 +47,36 @@
 </body>
 <script>
 // modal
-var likemodal = document.getElementById("love");
-var dislikemodal = document.getElementById("hate");
+var likemodal = document.getElementById('love');
+var dislikemodal = document.getElementById('hate');
 
 // button
-var likebtn = document.getElementById("love-it");
-var dislikebtn = document.getElementById("hate-it");
+var likebtn = document.getElementById('love-it');
+var dislikebtn = document.getElementById('hate-it');
 
 // All 
-// var modal = document.getElementsByClassName("modal");
+// var modal = document.getElementsByClassName('modal');
 
 // Close
-var closelike = document.getElementsByClassName("close-like")[0];
-var closedislike = document.getElementsByClassName("close-dislike")[0];
+var closelike = document.getElementsByClassName('close-like')[0];
+var closedislike = document.getElementsByClassName('close-dislike')[0];
 
 // Click to open Like
 likebtn.onclick = function() {
-	likemodal.style.display = "block";
+	likemodal.style.display = 'block';
 }
 
 // Click to open Dislike
 dislikebtn.onclick = function() {
-	dislikemodal.style.display = "block";
+	dislikemodal.style.display = 'block';
 }
 
 // Click to Close
 closelike.onclick = function() {
-	likemodal.style.display = "none";
+	likemodal.style.display = 'none';
 }
 closedislike.onclick = function() {
-	dislikemodal.style.display = "none";
+	dislikemodal.style.display = 'none';
 }
 </script>
 </html>

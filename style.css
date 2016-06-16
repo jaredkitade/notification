@@ -4,6 +4,7 @@
 img {
 	height:20pt;
 	width:auto;
+	margin-bottom:-5px;
 }
 a {
 	text-decoration: none;
@@ -17,11 +18,19 @@ h1 {
 	margin-top:0;
 	font-weight: 300;
 	font-size: 16pt;
+	color:#fff;
 }
 h2 {
 	margin-top:0;
 	font-weight: bold;
 	font-size: 16pt;
+	color: black;
+}
+h3 {
+	margin-top:0;
+	font-weight: 300;
+	font-size: 16pt;
+	color: black;
 }
 body {
 	background-color: black;
@@ -54,13 +63,15 @@ body {
 	vertical-align: top;
 	width:200pt;
 	height:44pt;
-	border:1px solid #bcbcbc;
 	text-align: center;
 	margin-bottom:15pt;
 	background: #4fc357;
 	border-radius: 4pt;
 	cursor: pointer;
 	line-height: 44pt;
+}
+.blue {
+	background-color: #20ace8;
 }
 .button a {
 	color: #fff;
