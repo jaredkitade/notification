@@ -1,15 +1,21 @@
 * {
 	box-sizing:border-box;
 }
+p {
+	margin-top: 0;
+}
 body {
 	background-color: black;
 	overflow: hidden;
-	font-family: sans-serif;
-	color: #bcbcbc;
+	font-family: 'Helvetica Neue', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	color: #fff;
+	font-size: 16pt;
+	font-weight: 300;
 }
 #notification {
-	width:350px;
-	height:350px;
+	width:100%;
+	height:100%;
 	position: absolute;
 	top: 50%;
 	left:50%;
@@ -18,28 +24,32 @@ body {
 }
 #button-container { 
 	height:auto;
-	width: 300px;
+	width: 200pt;
 	position: absolute;
 	top: 50%;
 	left:50%;
 	transform:translate(-50%,-50%);
 }
 .button {
-	width:300px;
-	height:auto;
-	padding:5px;
+	display: inline-block;
+	vertical-align: top;
+	width:200pt;
+	height:44pt;
 	border:1px solid #bcbcbc;
 	text-align: center;
-	margin-bottom:10px;
-	font-size: 1em;
-	line-height: 1.25em;
-	background: white;
-	border-radius: 10px;
+	margin-bottom:15pt;
+	background: #4fc357;
+	border-radius: 4pt;
+	cursor: pointer;
+	line-height: 44pt;
 }
 .button a {
 	text-decoration: none;
 	color: #bcbcbc;
 	cursor: pointer;
+}
+.button:hover {
+	background-color: #20ace8;
 }
 
 .modal {
@@ -53,8 +63,8 @@ body {
     overflow: auto; 
 	background-color: white;    
     padding:30px;
-    animation: fade .2s ease-in-out;
-    -webkit-animation: fade .2s ease-in-out;
+    animation: fade .2s linear;
+    -webkit-animation: fade .2s linear;
 }
 @keyframes fade {
 	from {opacity:0;}
@@ -65,18 +75,21 @@ body {
 	to {opacity:100;}
 }
 .content {
-	width:70%;
-	height:70%;
+	color:black;
+	width:400px;
+	height:400px;
 	position: absolute;
 	top: 50%;
 	left:50%;
 	transform:translate(-50%,-50%);
+	text-decoration: none;
 }
 .close-like, .close-dislike {
     color: #aaa;
     float: right;
     font-size: 28px;
     z-index: 2;
+    cursor: pointer;
 }
 /*-------------------------------------------------------iPhone 6 */
 @media only screen 
