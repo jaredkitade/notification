@@ -58,6 +58,9 @@ body {
 	left:50%;
 	transform:translate(-50%,-50%);
 }
+#hate-it {
+	background: #e03b3b;
+}
 .button {
 	display: inline-block;
 	vertical-align: top;
