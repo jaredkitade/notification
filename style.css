@@ -53,6 +53,8 @@ body {
     overflow: auto; 
 	background-color: white;    
     padding:30px;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;  
 }
 .content {
 	width:70%;
