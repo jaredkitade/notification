@@ -53,8 +53,16 @@ body {
     overflow: auto; 
 	background-color: white;    
     padding:30px;
-    transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;  
+    animation: fade .2s ease-in-out;
+    -webkit-animation: fade .2s ease-in-out;
+}
+@keyframes fade {
+	from {opacity:0;}
+	to {opacity:100;}
+}
+-webkit-@keyframes fade {
+	from {opacity:0;}
+	to {opacity:100;}
 }
 .content {
 	width:70%;
@@ -70,7 +78,6 @@ body {
     font-size: 28px;
     z-index: 2;
 }
-
 /*-------------------------------------------------------iPhone 6 */
 @media only screen 
   and (min-device-width: 375px) 
