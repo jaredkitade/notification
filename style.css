@@ -24,16 +24,16 @@ h2 {
 	margin-top:0;
 	font-weight: bold;
 	font-size: 16pt;
-	color: black;
+	color: #343330;
 }
 h3 {
 	margin-top:0;
 	font-weight: 300;
 	font-size: 16pt;
-	color: black;
+	color: #343330;
 }
 body {
-	background-color: black;
+	background-color: #343330;
 	overflow: hidden;
 	font-family: 'Helvetica Neue', Helvetica, sans-serif;
 	-webkit-font-smoothing: antialiased;
@@ -106,8 +106,8 @@ body {
 	to {opacity:100;}
 }
 .content {
-	color:black;
-	width:70%;
+	color:#343330;
+	width:200pt;
 	height:auto;
 	position: absolute;
 	top: 50%;
