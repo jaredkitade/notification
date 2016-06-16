@@ -1,6 +1,10 @@
 * {
 	box-sizing:border-box;
 }
+img {
+	height:20pt;
+	width:auto;
+}
 a {
 	text-decoration: none;
 	color:#20ace8;
